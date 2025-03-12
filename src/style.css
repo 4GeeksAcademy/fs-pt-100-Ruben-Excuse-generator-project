@@ -1,5 +1,83 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-
-body{
-    background: white;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    background-image: url(https://www.harrypotter.com/images/home/stars.png), linear-gradient(180deg, #091584, #323657 121.35%);
+    background-position: 10% 461%, 50%, bottom !important;
+    background-size: 2000px auto, 2000px auto, 100% 100%;
+    font-family: 'Nunito', sans-serif;
+    color:white;
+}
+.title{
+    display: flex;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.subtitle{
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Playwrite IN", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.btn{
+    width: 120px;
+    height: 50px;
+    margin:30px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    border-radius: 25%;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; 
+}
+.excuse_generator{
+    margin: 20px;
+    border: #d50000 solid 4px;
+    border-radius: 10px;
+    padding:10px;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+}
+.excuse_generator:hover {
+    border: 6px solid rgb(227, 4, 4);
+}
+.hidden {
+    display: none;
+}
+@media all and (max-width: 400px){
+    .title{
+        font-size: 40px;
+        display: flex;
+        text-align: center;
+        font-family: "Delius", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .subtitle{
+        font-size: 20px;
+        display: flex;
+        text-align: center;
+        font-family: "Playwrite IN", cursive;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+    .excuse_generator {
+        font-size: 19px;
+        display: flex;
+        text-align: center;
+    }
 }
